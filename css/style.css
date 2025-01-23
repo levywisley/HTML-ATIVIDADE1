@@ -1,31 +1,48 @@
 /* Trocar a família da fonte de toda a página */
 body {
-    font-family: Arial, sans-serif; /* Altere para a fonte desejada */
-    background-color: #FFFFFF; /* Cor de fundo da página, se necessário */
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; /* Remove margens padrão do body */
 }
-
 /* Estilo para o título principal */
 h1 {
-    color: #3D3D3D; /* Cor da fonte do título principal */
-    background-color: #E1EDF2; /* Cor de fundo do título principal */
-    padding: 10px; /* Adiciona um pouco de espaço ao redor do texto */
+    color: #3D3D3D;
+    background-color: #E1EDF2;
+    padding: 10px; /* Espaço interno de 10px */
 }
 
 /* Estilo para os subtítulos */
 h2 {
-    border-bottom: 2px solid #3D3D3D; /* Borda na parte de baixo dos subtítulos */
-    padding-bottom: 5px; /* Espaço entre o texto e a borda */
+    border-bottom: 2px solid #3D3D3D;
+    padding-bottom: 5px;
 }
-
 /* Estilo para as figuras */
 figure {
-    text-align: center; /* Centraliza o conteúdo da figura */
-    background-color: whitesmoke; /* Cor de fundo da figura */
-    padding: 10px; /* Adiciona um pouco de espaço ao redor do conteúdo da figura */
-    margin: 20px 0; /* Espaço acima e abaixo da figura */
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 15px 15px 15px 15px; /* Espaço interno de 15px */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;/* Afasta 30px das caixas acima e abaixo */
+    border: 10px;
 }
-
+/* Estilo para as imagens dentro das figuras */
+figure img {
+    display: block; /* Torna a imagem um bloco */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
 /* Estilo para as legendas das figuras */
 figcaption {
-    color: lightgrey; /* Cor da fonte para a legenda da figura */
+    color: lightgrey;
+    padding: 10px;
+    margin-top: 10px; /* Afasta 10px a legenda da imagem */
 }
