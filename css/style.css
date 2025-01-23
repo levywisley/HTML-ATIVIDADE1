@@ -15,7 +15,7 @@ h1 {
 }
 
 /* Estilo para os subtítulos */
-h2, h3, h4 {
+h2 {
     border-bottom: 2px solid #3D3D3D;
     padding-bottom: 5px;
 }
@@ -41,9 +41,22 @@ figure img {
 figcaption {
     color: lightgrey;
     padding: 10px;
-    margin-top: 10px; /* Afasta 10px a legenda da imagem */
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;/* Afasta 10px a legenda da imagem */
 }
-/*#familia {
+#familia {
     width: 275px;
     text-align: right;
+    display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.titulo {
+    font-size: 2em; /* Tamanho da fonte */
+    margin: 20px 0; /* Margem superior e inferior */
+    font-weight: bold; /* Negrito */
+    color: #3D3D3D;
+    background-color: #E1EDF2;
+    padding: 10px; /* Espaço interno de 10px */
 }
