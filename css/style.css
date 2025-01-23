@@ -2,10 +2,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #FFFFFF;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px; /* Remove margens padrão do body */
+}
+container {
+    width: 940px;
+    padding: 0 30px; 
 }
 /* Estilo para o título principal */
 h1 {
@@ -15,34 +15,34 @@ h1 {
 }
 
 /* Estilo para os subtítulos */
-h2 {
+h2, h3, h4 {
     border-bottom: 2px solid #3D3D3D;
     padding-bottom: 5px;
 }
 /* Estilo para as figuras */
 figure {
     text-align: center;
-    background-color: whitesmoke;
-    padding: 15px 15px 15px 15px; /* Espaço interno de 15px */
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;/* Afasta 30px das caixas acima e abaixo */
-    border: 10px;
+    background-color: whitesmoke; 
+    color: lightgrey; 
+    width: 850px;
+    height: 630px;
+    padding: 15px; 
+    margin: 30px auto; /* Margem superior, inferior e automática para centralizar */
 }
 /* Estilo para as imagens dentro das figuras */
 figure img {
-    display: block; /* Torna a imagem um bloco */
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    img{
+        width: 848px;
+        height: 601px;
+    }
+
 }
 /* Estilo para as legendas das figuras */
 figcaption {
     color: lightgrey;
     padding: 10px;
     margin-top: 10px; /* Afasta 10px a legenda da imagem */
+}
+/*#familia {
+    width: 275px;
 }
