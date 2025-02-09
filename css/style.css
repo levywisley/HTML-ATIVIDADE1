@@ -1,12 +1,26 @@
-/* Trocar a família da fonte de toda a página */
 body {
     font-family: Arial, sans-serif;
     background-color: #FFFFFF;
 }
-container {
+
+.container {
     width: 940px;
     padding: 0 30px; 
+    display: flex; /* Usar flexbox para alinhar imagem e texto */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinhar verticalmente */
 }
+
+.container img {
+    width: 50%; /* Ajustar a largura da imagem */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.texto {
+    width: 45%; /* Ajustar a largura do texto */
+    margin-right: 20px; /* Espaçamento à direita */
+}
+
 /* Estilo para o título principal */
 h1 {
     color: #3D3D3D;
@@ -19,43 +33,12 @@ h2 {
     border-bottom: 2px solid #3D3D3D;
     padding-bottom: 5px;
 }
+
 p {
     margin: 10px;
     padding-bottom: 5px;
 }
-/* Estilo para as figuras */
-figure {
-    text-align: center;
-    background-color: whitesmoke; 
-    color: lightgrey; 
-    width: 850px;
-    height: 630px;
-    padding: 15px; 
-    margin: 30px auto; /* Margem superior, inferior e automática para centralizar */
-}
-/* Estilo para as imagens dentro das figuras */
-figure img {
-    img{
-        width: 848px;
-        height: 601px;
-    }
 
-}
-/* Estilo para as legendas das figuras */
-figcaption {
-    color: lightgrey;
-    padding: 10px;
-    text-align: center;
-    font-style: italic;
-    margin-top: 5px;/* Afasta 10px a legenda da imagem */
-}
-#familia {
-    width: 275px;
-    text-align: right;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-}
 .titulo {
     font-size: 2em; /* Tamanho da fonte */
     margin: 10px 0; /* Margem superior e inferior */
@@ -63,4 +46,61 @@ figcaption {
     color: #3D3D3D;
     background-color: #E1EDF2;
     padding: 10px; /* Espaço interno de 10px */
+}
+
+/* Estilo para as figuras */
+figure {
+    text-align: center;
+    background-color: whitesmoke; 
+    color: black; 
+    height: 350px; /* Definindo altura uniforme */
+    padding: 15px; 
+    margin: 30px auto; /* Margem superior, inferior e automática para centralizar */
+}
+
+/* Estilo específico para a figura da matriz */
+.figure-matriz {
+    width: 550px; /* Definindo largura para a figura da matriz */
+    margin: 30px auto; /* Centralizando a figura */
+}
+
+/* Estilo específico para a figura da família */
+.figure-familia {
+    width: 275px; /* Definindo largura para a figura da família */
+    float: right; /* Alinhando à direita */
+    margin-bottom: 50px; /* Espaçamento abaixo da figura da família */
+    margin-left: 15px; /* Adicionando margem à esquerda para espaçamento */
+}
+
+/* Adicionando espaçamento entre as figuras */
+figure + figure {
+    margin-top: 50px; /* Espaçamento entre figuras */
+}
+
+/* Estilo para as imagens dentro das figuras */
+figure img {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para as legendas das figuras */
+figcaption {
+    color: lightgrey;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px; /* Afasta 10px a legenda da imagem */
+}
+
+/* Estilos para o rodapé */
+.footer {
+    padding: 20px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-top: 20px; /* Margem superior */
+}
+
+.footer h2, .footer h3 {
+    margin: 0; /* Remove margens */
 }
