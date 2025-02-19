@@ -99,6 +99,7 @@ figcaption {
     font-size: 14px; /* Tamanho da fonte */
     color: #333; /* Cor do texto */
     margin-top: 20px; /* Margem superior */
+    font-size: 12;
 }
 
 .footer h2, .footer h3 {
