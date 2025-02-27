@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+
+nav {
+    margin-bottom: 20px;
+    color: rgb(6, 65, 116);
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+form {
+    width: 400px; /* Ajustando a largura do formulário */
+    margin: 0; /* Removendo o margin para alinhar à esquerda */
+    float: left; /* Posicionando o formulário à esquerda */
+}
+
+label {
+    display: inline; /* Alterando para inline para posicionar o label ao lado do campo */
+    margin: 0; /* Removendo qualquer margem */
+    vertical-align: middle; /* Alinhando o label ao meio do input */
+}
+
+
+
+label[for="fone"], label[for="email"] {
+    display: inline; /* Alterando para inline para posicionar os labels ao lado dos campos */
+    margin: 0; /* Removendo qualquer margem */
+    vertical-align: middle; /* Alinhando os labels ao meio dos inputs */
+}
+
+
+
+input, textarea {
+    width: 500px; /* Ajustando a largura para 500px */
+    height: 30px; /* Ajustando a altura para 30px */
+    margin-bottom: 10px; /* Mantendo o espaçamento de 10px entre os campos */
+}
+
+textarea {
+    height: 300px; /* Ajustando a altura do campo "Deixe sua opinião" para 300px */
+}
+
+button[type="submit"] {
+    width: 100px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Letras pretas */
+    font-weight: bold; /* Letras em negrito */
+}
+
+h1 {
+    color: #3D3D3D;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #3D3D3D;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.titulo {
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #3D3D3D;
+    background-color: #E1EDF2;
+    padding: 10px;
+}
+
+#fone {
+    maxlength: 11;
+}
+
+#fone::-webkit-input-placeholder {
+    content: "(xx) x xxxx-xxxx";
+}
+
+#fone:-moz-placeholder {
+    content: "(xx) x xxxx-xxxx";
+}
+
+#fone:-ms-input-placeholder {
+    content: "(xx) x xxxx-xxxx";
+}
+
+#fone::-ms-input-placeholder {
+    content: "(xx) x xxxx-xxxx";
+}
+
+.container {
+    width: 940px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+}
+
+.texto {
+    width: 45%;
+    margin-right: 20px;
+}
+
+figure {
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    height: 350px;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+.figure-matriz {
+    width: 550px;
+    margin: 30px auto;
+}
+
+.figure-familia {
+    width: 275px;
+    float: right;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+figure + figure {
+    margin-top: 50px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: lightgrey;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.footer h2, .footer h3 {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white; /* cor da pagina toda */
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: black; /* texto */
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 55px;
+    background: lightgrey; /* cor da caixa palavra casa */
+    text-decoration: none;
+    color: black; /* palavra casa */
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
+}
